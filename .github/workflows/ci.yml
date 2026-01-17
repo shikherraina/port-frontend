@@ -1,0 +1,11 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [fe-first]
+  pull_request:
+    branches: [fe-first]
+
+jobs:
+  frontend-ci:
+    uses: shikherraina/port-infra/.github/workflows/frontend-ci.yml@main
