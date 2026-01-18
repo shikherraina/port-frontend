@@ -9,3 +9,5 @@ on:
 jobs:
   frontend-ci:
     uses: shikherraina/port-infra/.github/workflows/frontend-ci.yml@main
+    secrets:
+      NEXT_PUBLIC_BACKEND_URL: ${{ secrets.NEXT_PUBLIC_BACKEND_URL }}
